@@ -1,6 +1,6 @@
 const button = document.getElementById('buttonEmail')
 const buttonContainer = document.getElementById('buttonContainer')
-const email = document.getElementById('email').innerHTML
+const email = document.getElementById('email').innerText
 const alert = document.createElement('p')
 alert.innerHTML = 'Email copiado!'
 alert.className =
