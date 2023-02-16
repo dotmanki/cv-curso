@@ -12,6 +12,10 @@ module.exports = {
         beige: '#dacbba',
         primary: '#333',
         secondary: '#3a3a3a',
+        'dark-bg': '#1a1919',
+        'dark-beige': '#ede6de',
+        'dark-primary': '#fff',
+        'dark-secondary': '#E5E5E5',
       },
       backgroundImage: {
         'line-decorator': "url('/assets/line.svg')",
@@ -24,4 +28,5 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: 'class',
 }

@@ -20,19 +20,54 @@
     ></script>
     <title>CV</title>
   </head>
-  <body class="overflow-x-hidden max-w-full p-3 md:grid md:grid-cols-12">
+  <body
+    class="overflow-x-hidden max-w-full p-4 md:grid md:grid-cols-12 dark:bg-dark-bg"
+  >
+    <nav class="col-span-12 p-3 fixed w-20 right-0 h-screen z-10">
+      <ul
+        class="flex flex-wrap flex-column font-heebo font-bold h-full content-center items-center"
+      >
+        <li class="w-full h-14 mb-5">
+          <button
+            class="bg-beige rounded-full w-full h-full opacity-60 hover:opacity-100"
+            id="toggle-mode"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </li>
+        <li class="w-full h-14 mb-5">
+          <button
+            class="bg-beige rounded-full w-full h-full opacity-60 hover:opacity-100"
+          >
+            <a href="assets/cv.pdf" download
+              ><i class="fa-solid fa-download"></i
+            ></a>
+          </button>
+        </li>
+        <li class="w-full h-14 mb-5">
+          <button
+            class="bg-beige rounded-full w-full h-full opacity-60 hover:opacity-100"
+          >
+            <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
+          </button>
+        </li>
+      </ul>
+    </nav>
     <header
       class="md:grid md:grid-cols-12 md:col-span-12 md:grid-flow-dense md:gap-5"
+      id="header"
     >
       <div
         class="md:px-5 md:col-span-8 md:flex md:flex-col md:justify-center md:order-2"
       >
         <h1
-          class="text-6xl font-raleway font-extrabold text-primary md:col-span-8"
+          class="text-6xl font-raleway font-extrabold text-primary md:col-span-8 dark:text-dark-primary"
         >
           SCOTT JOHNSON
         </h1>
-        <h3 class="font-heebo md:text-start text-secondary tracking-wider">
+        <h3
+          class="font-heebo md:text-start text-secondary tracking-wider dark:text-dark-secondary"
+        >
           DISEÑADOR WEB PROFESIONAL
         </h3>
       </div>
@@ -49,7 +84,10 @@
     </header>
 
     <aside class="bg-beige px-5 mb-14 pt-4 mr-5 md:mr-3 md:col-span-4">
-      <section class="container grid grid-cols-12 gap-2 mb-14" id="contact">
+      <section
+        class="container grid grid-cols-12 md:grid-cols-main-lg gap-2 mb-14"
+        id="contact"
+      >
         <!-- Linea decoradora -->
         <div class="w-full h-full col-span-1 draw-line"></div>
         <article class="col-span-11">
@@ -76,7 +114,10 @@
         </article>
       </section>
 
-      <section class="container grid grid-cols-12 gap-2 mb-14" id="education">
+      <section
+        class="container grid grid-cols-12 md:grid-cols-main-lg gap-2 mb-14"
+        id="education"
+      >
         <!-- Linea decoradora -->
         <div class="w-full h-full draw-line col-span-1 bg-no-repeat"></div>
         <article class="col-span-10 lg:col-span-11">
@@ -96,7 +137,10 @@
         </article>
       </section>
 
-      <section class="container grid grid-cols-12 gap-2 mb-14" id="languages">
+      <section
+        class="container grid grid-cols-12 md:grid-cols-main-lg gap-2 mb-14"
+        id="languages"
+      >
         <!-- Linea decoradora -->
         <div class="w-full h-full col-span-1 draw-line"></div>
         <article class="col-span-10 lg:col-span-11">
@@ -111,7 +155,10 @@
         </article>
       </section>
 
-      <section class="container grid grid-cols-12 gap-2" id="habilities">
+      <section
+        class="container grid grid-cols-12 md:grid-cols-main-lg gap-2"
+        id="habilities"
+      >
         <!-- Linea decoradora -->
         <div class="w-full h-full col-span-1 draw-line"></div>
         <article class="col-span-10 lg:col-span-11">
@@ -159,10 +206,14 @@
         <!-- Linea decoradora -->
         <div class="w-full h-full col-span-1 draw-line"></div>
         <article class="col-span-10 md:col-span-11">
-          <h3 class="text-3xl font-bold font-heebo text-primary mb-2">
+          <h3
+            class="text-3xl font-bold font-heebo text-primary dark:text-dark-primary mb-2"
+          >
             ACERCA DE MI
           </h3>
-          <p class="font-hind-madurai font-light text-lg">
+          <p
+            class="font-hind-madurai font-light text-lg dark:text-dark-secondary"
+          >
             Diseñador gráfico profesional con experiencia en las áreas de
             fotografía, diseño web, tipografía, ilustración y animación. Me
             considero una persona proactiva, organizada, responsable capaz de
@@ -176,9 +227,13 @@
         id="experience"
       >
         <!-- Linea decoradora -->
-        <div class="w-full h-full col-span-1 draw-line"></div>
-        <article class="col-span-10 lg:col-span-11">
-          <h3 class="text-3xl font-bold font-heebo text-primary mb-2">
+        <div
+          class="w-full h-full col-span-1 draw-line dark:text-dark-primary"
+        ></div>
+        <article class="col-span-10 lg:col-span-11 dark:text-dark-secondary">
+          <h3
+            class="text-3xl font-bold font-heebo text-primary dark:text-dark-primary mb-2"
+          >
             EXPERIENCIA
           </h3>
           <ul class="text-lg font-hind-madurai font-light mb-10">
@@ -233,9 +288,11 @@
         <!-- Linea decoradora -->
         <div class="w-full h-full col-span-1 draw-line"></div>
         <article
-          class="col-span-10 lg:col-span-11 font-hind-madurai font-light"
+          class="col-span-10 lg:col-span-11 font-hind-madurai font-light dark:text-dark-secondary"
         >
-          <h3 class="text-3xl font-bold font-heebo text-primary mb-2">
+          <h3
+            class="text-3xl font-bold font-heebo text-primary dark:text-dark-primary mb-2"
+          >
             REFERENCIAS
           </h3>
           <ul class="text-lg mb-10">
