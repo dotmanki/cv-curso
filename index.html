@@ -6,105 +6,253 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
     <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Hind+Madurai:wght@300;500;700&family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.2/svg.min.js"
+      integrity="sha512-I+rKw3hArzZIHzrkdELbKqrXfkSvw/h0lW/GgB8FThaBVz2e5ZUlSW8kY8v3q6wq37eybIwyufkEZxe4qSlGcg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>CV</title>
   </head>
-  <body class="overflow-x-hidden max-w-full">
-    <nav class="w-screen bg-slate-800 text-slate-50 p-5">
-      <ul class="flex justify-around">
-        <li class="text-lg font-bold">
-          <i class="fa-solid fa-house-user"></i> <a href="#home">Inicio</a>
-        </li>
-        <li class="text-lg font-bold">
-          <i class="fa-solid fa-briefcase"></i>
-          <a href="#experience">Experiencia</a>
-        </li>
-        <li class="text-lg font-bold">
-          <i class="fa-solid fa-address-card"></i>
-          <a href="#contact">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-    <div
-      class="container grid md:grid-cols-2 justify-items-center h-screen border-b border-slate-500"
-      id="home"
+  <body class="overflow-x-hidden max-w-full p-3 md:grid md:grid-cols-12">
+    <header
+      class="md:grid md:grid-cols-12 md:col-span-12 md:grid-flow-dense md:gap-5"
     >
-      <h1 class="text-4xl font-bold text-center my-5 md:col-span-2">
-        Curriculum Vitae
-      </h1>
-
-      <img
-        src="https://randomuser.me/api/portraits/men/14.jpg"
-        class="rounded-full border border-2 border-indigo-800 w-60"
-      />
-      <div>
-        <h2 class="text-3xl font-bold text-center md:pt-10">
-          Hola, me llamo <span class="text-indigo-800">Scott Johnson</span>
-        </h2>
-        <h3 class="text-2xl text-center md:text-start text-indigo-800">
-          Diseñador web profesional
+      <div
+        class="md:px-5 md:col-span-8 md:flex md:flex-col md:justify-center md:order-2"
+      >
+        <h1
+          class="text-6xl font-raleway font-extrabold text-primary md:col-span-8"
+        >
+          SCOTT JOHNSON
+        </h1>
+        <h3 class="font-heebo md:text-start text-secondary tracking-wider">
+          DISEÑADOR WEB PROFESIONAL
         </h3>
       </div>
-    </div>
-    <div
-      class="container grid justify-items-center items-center h-screen md:grid-cols-2 border-b border-slate-500"
-      id="experience"
-    >
-      <h2 class="text-3xl font-bold text-center my-5">Experiencia</h2>
-      <div class="w-80">
-        <ul class="text-indigo-800">
-          <li class="text-xl my-5">
-            <span class="font-bold text-slate-800">Google: </span>Experiencia de
-            usuario (2 años)
-          </li>
-          <li class="text-xl my-5">
-            <span class="font-bold text-slate-800">Facebook: </span>Maquetador
-            de paginas (1 año)
-          </li>
-          <li class="text-xl my-5">
-            <span class="font-bold text-slate-800">Airbnb: </span>Diseñador
-            grafico (1 año)
-          </li>
-          <li class="text-xl my-5">
-            <span class="font-bold text-slate-800">Mercado libre: </span
-            >Desarrollador Frontend (2 años)
-          </li>
-        </ul>
+
+      <div
+        class="md:col-span-4 flex relative justify-center items-center md:mr-0 mr-5 before:content-[''] before:w-full before:h-1/2 before:absolute before:bottom-0 before:bg-beige"
+      >
+        <img
+          src="https://randomuser.me/api/portraits/men/14.jpg"
+          class="rounded-full w-60 shadow-lg translate-y-0"
+          alt="profile picture"
+        />
       </div>
-    </div>
-    <div
-      class="container grid justify-items-center h-screen md:grid-cols-2 items-center"
-      id="contact"
-    >
-      <h2 class="text-3xl font-bold text-center my-5">Contacto</h2>
-      <div class="w-80">
-        <ul class="text-indigo-800">
-          <li class="text-xl my-5">
-            <span class="font-bold text-slate-800">Email: </span
-            ><span id="email">scott.johnson@example.com</span>
-          </li>
-          <li class="text-xl my-5">
-            <span class="font-bold text-slate-800">Fecha de nacimiento: </span
-            >2/6/1976
-          </li>
-          <li class="text-xl my-5">
-            <span class="font-bold text-slate-800">Dirección: </span>9150 Locust
-            Rd
-          </li>
-          <li class="text-xl my-5">
-            <span class="font-bold text-slate-800">Teléfono: </span>(602)
-            458-4520
-          </li>
-        </ul>
-      </div>
-      <div class="md:col-span-2" id="buttonContainer">
-        <button
-          id="buttonEmail"
-          class="rounded-full bg-indigo-800 text-slate-50 text-xl font-bold p-3 disabled:opacity-75"
+    </header>
+
+    <aside class="bg-beige px-5 mb-14 pt-4 mr-5 md:mr-3 md:col-span-4">
+      <section class="container grid grid-cols-12 gap-2 mb-14" id="contact">
+        <!-- Linea decoradora -->
+        <div class="w-full h-full col-span-1 draw-line"></div>
+        <article class="col-span-11">
+          <h3 class="text-3xl font-bold font-heebo text-primary mb-2">
+            CONTACTO
+          </h3>
+          <ul
+            class="text-secondary font-hind-madurai font-light overflow-hidden"
+          >
+            <li class="text-lg my-1">
+              <i class="fa-solid fa-envelope"></i>
+              scott.johnson@example.com
+            </li>
+            <li class="text-lg my-1">
+              <i class="fa-solid fa-location-dot"></i> 9150 Locust Rd
+            </li>
+            <li class="text-lg my-1">
+              <i class="fa-solid fa-phone"></i> (602) 458-4520
+            </li>
+            <li class="text-lg my-1">
+              <i class="fa-solid fa-globe"></i> www.scott-johnson.com
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="container grid grid-cols-12 gap-2 mb-14" id="education">
+        <!-- Linea decoradora -->
+        <div class="w-full h-full draw-line col-span-1 bg-no-repeat"></div>
+        <article class="col-span-10 lg:col-span-11">
+          <h3 class="text-3xl font-bold font-heebo text-primary mb-2">
+            EDUCACIÓN
+          </h3>
+          <ul class="text-secondary font-hind-madurai mb-5">
+            <li class="text-lg font-medium">2010 - 2014</li>
+            <li class="text-lg font-bold">Licenciatura en Diseño Gráfico</li>
+            <li class="text-lg font-light">Universidad de Chile</li>
+          </ul>
+          <ul class="text-secondary font-hind-madurai">
+            <li class="text-lg font-medium">2010 - 2014</li>
+            <li class="text-lg font-bold">Maestría en Arte</li>
+            <li class="text-lg font-light">Universidad Increible</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="container grid grid-cols-12 gap-2 mb-14" id="languages">
+        <!-- Linea decoradora -->
+        <div class="w-full h-full col-span-1 draw-line"></div>
+        <article class="col-span-10 lg:col-span-11">
+          <h3 class="text-3xl font-bold font-heebo text-primary mb-2">
+            IDIOMAS
+          </h3>
+          <ul class="text-secondary font-hind-madurai mb-5 font-light">
+            <li class="text-lg">Español - Nativo</li>
+            <li class="text-lg">Inglés - Avanzado</li>
+            <li class="text-lg">Francés - Intermedio</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="container grid grid-cols-12 gap-2" id="habilities">
+        <!-- Linea decoradora -->
+        <div class="w-full h-full col-span-1 draw-line"></div>
+        <article class="col-span-10 lg:col-span-11">
+          <h3 class="text-3xl font-bold font-heebo text-primary mb-2">
+            HABILIDADES
+          </h3>
+          <ul
+            class="text-secondary font-hind-madurai font-light overflow-hidden"
+          >
+            <li class="text-lg my-1">
+              <i class="fa-solid fa-pen-nib"></i>
+              Diseño Web
+            </li>
+            <li class="text-lg my-1">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Animación
+            </li>
+            <li class="text-lg my-1">
+              <i class="fa-solid fa-text-width"></i> Tipografía
+            </li>
+            <li class="text-lg my-1">
+              <i class="fa-solid fa-chart-simple"></i> Marketing
+            </li>
+            <li class="text-lg my-1">
+              <i class="fa-solid fa-icons"></i> Iconografía
+            </li>
+            <li class="text-lg my-1">
+              <i class="fa-solid fa-bezier-curve"></i> Ilustración
+            </li>
+            <li class="text-lg my-1">
+              <i class="fa-solid fa-camera"></i> Fotografía
+            </li>
+            <li class="text-lg my-1">
+              <i class="fa-brands fa-sketch"></i> Diseño UX
+            </li>
+          </ul>
+        </article>
+      </section>
+    </aside>
+
+    <main class="px-5 pt-4 md:col-span-8">
+      <section
+        class="container grid grid-cols-12 md:grid-cols-main-lg gap-2 mb-14"
+        id="about-me"
+      >
+        <!-- Linea decoradora -->
+        <div class="w-full h-full col-span-1 draw-line"></div>
+        <article class="col-span-10 md:col-span-11">
+          <h3 class="text-3xl font-bold font-heebo text-primary mb-2">
+            ACERCA DE MI
+          </h3>
+          <p class="font-hind-madurai font-light text-lg">
+            Diseñador gráfico profesional con experiencia en las áreas de
+            fotografía, diseño web, tipografía, ilustración y animación. Me
+            considero una persona proactiva, organizada, responsable capaz de
+            resolver cualquier problema de manera creativa.
+          </p>
+        </article>
+      </section>
+
+      <section
+        class="container grid grid-cols-12 md:grid-cols-main-lg gap-2 mb-14"
+        id="experience"
+      >
+        <!-- Linea decoradora -->
+        <div class="w-full h-full col-span-1 draw-line"></div>
+        <article class="col-span-10 lg:col-span-11">
+          <h3 class="text-3xl font-bold font-heebo text-primary mb-2">
+            EXPERIENCIA
+          </h3>
+          <ul class="text-lg font-hind-madurai font-light mb-10">
+            <li>DISEÑADOR GRÁFICO JUNIOR</li>
+            <li>2014 - 2017 | Vandiere Inc.</li>
+            <ul class="list-disc ml-5 list-inside">
+              <li>Creó diseños para publicaciones en redes sociales</li>
+              <li>
+                Retocó fotografías para anuncios y publicaciones para redes
+                sociales
+              </li>
+              <li>Organizó archivos</li>
+            </ul>
+          </ul>
+
+          <ul class="text-lg font-hind-madurai font-light mb-10">
+            <li>DISEÑADOR GRÁFICO SENIOR</li>
+            <li>2017 - 2020 | Casa Colombia</li>
+            <ul class="list-disc ml-5 list-inside">
+              <li>Creó diseños para publicaciones en redes sociales</li>
+              <li>
+                Retocó fotografías para anuncios y publicaciones para redes
+                sociales
+              </li>
+              <li>Organizó archivos</li>
+              <li>Realizó diseño de personajes</li>
+            </ul>
+          </ul>
+
+          <ul class="text-lg font-hind-madurai font-light">
+            <li>DISEÑADOR GRÁFICO SENIOR</li>
+            <li>2020 - Presente | Ensigna</li>
+            <ul class="list-disc ml-5 list-inside">
+              <li>Creó diseños para publicaciones en redes sociales</li>
+              <li>
+                Retocó fotografías para anuncios y publicaciones para redes
+                sociales
+              </li>
+              <li>Organizó archivos</li>
+              <li>Realizó diseño de personajes</li>
+              <li>Realizó animaciones</li>
+              <li>Supervisó a diseñadores junior</li>
+            </ul>
+          </ul>
+        </article>
+      </section>
+
+      <section
+        class="container grid grid-cols-12 md:grid-cols-main-lg gap-2 mb-14"
+        id="refereces"
+      >
+        <!-- Linea decoradora -->
+        <div class="w-full h-full col-span-1 draw-line"></div>
+        <article
+          class="col-span-10 lg:col-span-11 font-hind-madurai font-light"
         >
-          Copiar Email!
-        </button>
-      </div>
-    </div>
+          <h3 class="text-3xl font-bold font-heebo text-primary mb-2">
+            REFERENCIAS
+          </h3>
+          <ul class="text-lg mb-10">
+            <li>Pedro Fernández</li>
+            <li>Casa Colombia</li>
+            <li>1234-5678</li>
+            <li>hola@sitioincreible.com</li>
+          </ul>
+          <ul class="text-lg">
+            <li>Marcela Andrade</li>
+            <li>Ensigna</li>
+            <li>1234-5678</li>
+            <li>hola@sitioincreible.com</li>
+          </ul>
+        </article>
+      </section>
+    </main>
 
     <script src="./index.js"></script>
   </body>

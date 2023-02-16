@@ -1,17 +1,27 @@
-const button = document.getElementById('buttonEmail')
-const buttonContainer = document.getElementById('buttonContainer')
-const email = document.getElementById('email').innerText
-const alert = document.createElement('p')
-alert.innerHTML = 'Email copiado!'
-alert.className =
-  'bg-green-800 rounded text-lg opacity-75 mt-5 text-slate-50 p-2'
-
-button.addEventListener('click', () => {
-  button.setAttribute('disabled', true)
-  navigator.clipboard.writeText(email)
-  buttonContainer.appendChild(alert)
-  setTimeout(() => {
-    button.removeAttribute('disabled')
-    buttonContainer.removeChild(alert)
-  }, 3000)
+//recopila todos los contenedores de las lineas decorativas
+window.addEventListener('load', () => {
+  const lineContainers = document.querySelectorAll('.draw-line')
+  lineContainers.forEach((element) => drawLine(element))
 })
+
+//Funcion para dibujar las lineas decorativas
+const drawLine = (container) => {
+  const [width, height] = [container.offsetWidth, container.offsetHeight]
+
+  const draw = SVG().addTo(container).size(width, height)
+  const circle = draw
+    .circle(width - 8, 100)
+    .fill('transparent')
+    .stroke({ color: '#333', width: 3 })
+    .cx(width / 2)
+    .cy(15)
+
+  draw
+    .line(
+      width / 2,
+      circle.attr('cy') + circle.attr('r'),
+      width / 2,
+      height - 5
+    )
+    .stroke({ color: '#333', width: 3, linecap: 'round' })
+}
